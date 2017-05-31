@@ -5,6 +5,8 @@ function returns True. Your function definition should look like:
 question1(s, t) and return a boolean True or False."""
 """
     complexity is O(n^2)
+    To solve this problem, I created lists of the two strings that were given,
+    we sort them alphabetically then compare them to see if they are the same.
 """
 
 def isanagram(s1, s2):
@@ -26,14 +28,14 @@ def question1(t, s):
     s_len = len(s)
 
     # Setting the range to be the string we want to compare
-    #complexity O(n)
+    #complexity of for in iteration is O(n)
     for i in range(s_len - t_len):
         # Call helper function which checks for t in s.
         if isanagram(s[i:i+t_len], t):
             return True
     return False
 
-# Simple test case.
+# first test
 print question1("ud", "udacity")
 
 print question1("", "check this")

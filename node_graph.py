@@ -2,17 +2,22 @@
     create a graph representation containing a list of edges per node
 """
 
+#node represents the parent of the edges
 class Node(object):
     def __init__(self, value):
         self.value = value
         self.edges = []
 
+#edges contain parent and children and a value associated with it
 class Edge(object):
     def __init__(self, value, node_from, node_to):
         self.value = value
         self.node_from = node_from
         self.node_to = node_to
-
+"""
+    the reason why the graph class contains both nodes and edges is
+    not every node will be tied to an edge if the graph is disconnected
+"""
 class Graph(object):
     def __init__(self, nodes=[], edges=[]):
         self.nodes = nodes
