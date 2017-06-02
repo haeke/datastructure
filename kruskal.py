@@ -185,7 +185,7 @@ def KruskalMST(graph, V, inv_dict):
         else:
             final_result[inv_dict[u]] = final_result[inv_dict[u]].append(p1)
         #print str(u) + " -- " + str(v) + " == " + str(weight)
-        #print ("%c -- %c == %d" % (inv_dict[u],inv_dict[v],weight))
+        print ("%c -- %c == %d" % (inv_dict[u],inv_dict[v],weight))
 
     return final_result
 
