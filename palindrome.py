@@ -1,10 +1,10 @@
-### Question 2 main function and helper functions.
+
 """Given a string a, find the longest palindromic substring contained in a.
 Your function definition should look like question2(a), and return a string."""
 
 """
     solution is O(n^3)
-    check to see if each substring is a palindrome or not, we check all the substrings 
+    check to see if each substring is a palindrome or not, we check all the substrings
 
 """
 
@@ -29,4 +29,5 @@ def question2(a):
             return l
 
 # Simple test case.
-print question2("moms")
+print question2("rerrmomsmomfhei") #expect momsmom
+print question2("wjir3")
