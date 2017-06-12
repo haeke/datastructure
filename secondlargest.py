@@ -28,6 +28,6 @@ def secondlargest(n,A):
 
 
 n = 5
-A = [2,3,5,7,78,5]
+A = [2,3,5,7,7,6,7,8,31,30,31,9,5,3,8,5]
 secondlargestnodupes(n, A)
 secondlargest(n,A)
