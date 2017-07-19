@@ -55,10 +55,13 @@ def find_second_largest(root_node):
 
         current = current.right
 
-secondlargest = BinaryTreeNode(4)
-
+secondlargest = BinaryTreeNode(5)
 secondlargest.insert_left(3)
-secondlargest.insert_right(5)
+secondlargest.left.insert_right(4)
+secondlargest.left.insert_left(1)
+secondlargest.insert_right(8)
+secondlargest.right.insert_left(7)
+secondlargest.right.insert_right(9)
 
 print find_largest(secondlargest)
 
