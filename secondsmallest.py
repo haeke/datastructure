@@ -1,7 +1,6 @@
 """
-    second lowest grade
-
-
+    second lowest element in an array
+    
 """
 
 def secondlow(students):
