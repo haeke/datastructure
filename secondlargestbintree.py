@@ -16,7 +16,7 @@ class BinaryTreeNode:
 
     def insert_right(self, value):
         self.right = BinaryTreeNode(value)
-        return self.left
+        return self.right
 """
 the 'rightmost' element in the BST will is the largest, this function just checks to see if there is an element other than None in the right node then returns the value
 """
